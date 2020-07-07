@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>Workshop Timer</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<div id="wrapper">
+
+		<header>
+			<h1>
+				ワークショップタイマー
+			</h1>
+
+		</header>
+		<div class="container">
+			<!-- //#plus buttons -->
+			<!--div class= "plusButtons"-->
+			<ul class="plusButtons">
+				<li class="buttonHour">
+					<div id="addHour">+</div>
+				</li>
+				<li class="buttonTenMin">
+					<div id="addTenMin">+</div>
+				</li>
+				<li class="buttonMin">
+					<div id="addMin">+</div>	
+				</li>
+				<li class="buttonTenSec">
+					<div id="addTenSec">+</div>
+				</li>
+				<li class="buttonSec">
+					<div id="addSec">+</div>
+				</li>
+			</ul>	
+			<!--/div--><!-- //#plusButtons -->
+			<div class="clear"></div>
+
+			<!-- //タイマー初期値は5分としておこう -->
+			<div id="timer">0:05:00</div>
+			
+			<!-- //#minus buttons -->
+			<!--div class= "minusButtons"-->
+			<ul class="minusButtons">
+				<li class= "buttonHour">
+					<div id="reduceHour">-</div>
+				</li>
+				<li class= "buttonTenMin">
+					<div id="reduceTenMin">-</div>
+				</li>
+				<li class = "buttonMin">
+					<div id="reduceMin">-</div>
+				</li>
+				<li class= "buttonTenSec">
+					<div id="reduceTenSec">-</div>
+				</li>
+				<li class= "buttonSec">
+					<div id="reduceSec">-</div>
+				</li>
+			</ul>
+			<!--/div--><!-- //#minusButtons -->
+
+			<div class="clear"></div>
+
+
+
+			<div class="controls">
+				<div id="start">スタート</div>
+				<div id="reset">リセット</div>
+			</div>
+
+			<div class="clear"></div>
+
+
+			<audio id="chime" preload="auto">
+				<source src="media/school-chime1.mp3" type="audio/mp3">
+				<source src="media/school-chime1.wav" type="audio/wav">
+			</audio>
+
+			<textarea id="orderText" rows="10" placeholder="タイマー稼働中にやることを書いてください"></textarea>
+			
+			<div class="orderLargeText" id="LargeText"></div>
+
+			<div class="textControl">
+				<div id="textClear">クリア</div>
+			</div>
+
+			<div class="clear"></div>
+
+
+		</div><!-- //#container -->
+
+		<script src="js/main.js"></script>
+
+	</div><!-- //#wrapper -->
+
+	<footer>
+		<p>© 2020 <a href="https://www.pm-samurai.net/" target="_blank">PMサムライ</a>　</p>
+	</footer>
+
+</body>
+</html>
